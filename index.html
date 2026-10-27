@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luisa Lozada · Arte contemporáneo</title>
+  <meta name="description" content="Portafolio de Luisa Lozada, artista contemporánea de Puebla: metal, fuego, resinas y maderas rescatadas del mar.">
+  <meta name="theme-color" content="#0E0907">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="obras">
+
+  <div class="mark" id="mark" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="brand" href="#/" aria-label="Luisa Lozada, inicio">
+      <img src="assets/logo/wordmark-light.svg" alt="Luisa Lozada" width="417" height="70">
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#/" data-k="obras">Obras</a>
+      <a href="#/sobre" data-k="sobre">Sobre mí</a>
+      <a href="#/contacto" data-k="contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view" id="view-obras" aria-label="Obras">
+      <div class="scroller" id="scroller">
+        <div class="track"><div class="rail" id="rail"></div></div>
+      </div>
+    </section>
+
+    <section class="view" id="view-sobre" aria-label="Sobre mí">
+      <div class="about">
+        <figure class="about-photo">
+          <div class="photo"><img src="assets/img/artista.jpg" alt="Luisa Lozada sentada entre sus obras" width="901" height="1341"></div>
+          <figcaption>Luisa Lozada entre sus piezas · Puebla</figcaption>
+        </figure>
+        <div class="about-text">
+          <p class="kicker">Puebla, 1984</p>
+          <h2 class="lede">Dejó la publicidad después de ver a Van Gogh en Ámsterdam. <em>Encontró en el metal una voz.</em></h2>
+          <div class="cols">
+            <p>Luisa Lozada, nacida en Puebla en 1984, descubrió su vocación artística tras un viaje a Europa, donde la obra de Van Gogh en Ámsterdam la inspiró a dejar la publicidad y dedicar su vida al arte como medio de transformación.</p>
+            <p>Aprendió diversas técnicas tradicionales, cubriendo desde la pintura acrílica, el óleo y la acuarela, pero en la joyería fue donde encontró un lenguaje auténtico. Con disciplina se formó con maestros orfebres y descubrió en los metales un medio de expresión personal. El metal, el vidrio, la madera y el fuego se convirtieron en herramientas fundamentales para su trabajo, como medio de declaración para expresar el contraste de la existencia: fuerza y vulnerabilidad, amor y angustia, belleza y caos.</p>
+            <p>El proceso es sensible y visceral: la flama no solo modela el metal, sino que representa la catarsis, un acto emocional de revelación. A través de un trabajo manual encuentra el equilibrio entre lo constructivo y lo destructivo, entre lo emocional y lo material.</p>
+            <p>Su trabajo combina la búsqueda artística y el trabajo personal. A través de piezas que evocan la esperanza, la memoria y el dolor, transmite su visión poética y emocional de la fragilidad humana. Sus obras muestran la fusión del fuego con aleaciones que generan colores y formas que hablan acerca de la resiliencia y la transformación. Su arte combina el silencio y la tempestad interior, creando universos sensibles donde coexisten la luz y la melancolía.</p>
+            <p>Ha hecho del metal su voz, un refugio y un medio de conexión con aquellos que la rodean. Mediante este transforma lo cotidiano en arte, lo rígido en belleza y el dolor en posibilidades. En sus manos los materiales cobran vida, al igual que nombra aquellas emociones que no podría con sus propias palabras.</p>
+          </div>
+          <ul class="facts">
+            <li><span>Materiales</span>Metal · vidrio · madera · fuego</li>
+            <li><span>Series</span>Después del ruido · Efímero · Transmutación · Resiliencias</li>
+            <li><span>Instagram</span><a href="https://instagram.com/luisa_lozada_arte" target="_blank" rel="noopener">@luisa_lozada_arte</a></li>
+          </ul>
+          <a class="cta" href="#/">Ver las obras <i aria-hidden="true">→</i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="view-contacto" aria-label="Contacto">
+      <div class="contact">
+        <div class="contact-links">
+          <p class="kicker">Hablemos de obra, exhibiciones o encargos</p>
+          <a class="big-link" href="mailto:luisa24lozada@gmail.com"><span>Correo</span>luisa24lozada@gmail.com</a>
+          <a class="big-link" href="tel:+522213260040"><span>Teléfono</span>+52 221 326 0040</a>
+          <a class="big-link" href="https://instagram.com/luisa_lozada_arte" target="_blank" rel="noopener"><span>Instagram</span>@luisa_lozada_arte</a>
+        </div>
+        <div class="contact-side">
+          <div class="photo photo--detail"><img src="assets/img/detalle.jpg" alt="Detalle de una pieza de metalurgia: cobre fundido sobre plancha de metal" width="1423" height="763"></div>
+          <form class="form" id="form" novalidate>
+            <label>Nombre<input name="nombre" autocomplete="name" required></label>
+            <label>Correo<input name="correo" type="email" autocomplete="email" required></label>
+            <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
+            <button type="submit" class="cta cta--btn">Enviar mensaje <i aria-hidden="true">→</i></button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+      <footer class="foot">
+        <img class="foot-mark" src="assets/logo/monograma.svg" alt="Monograma de Luisa Lozada" width="215" height="305">
+        <span class="foot-txt">© 2026 Luisa Lozada<br>Puebla, México · Sitio demo</span>
+        <img class="foot-tag" src="assets/logo/piezas-con-alma.svg" alt="Piezas con alma" width="422" height="407">
+      </footer>
+    </section>
+  </main>
+
+  <!-- capítulos + progreso -->
+  <nav class="chapters" id="chapters" aria-label="Series">
+    <div class="chapters-list" id="chaptersList"></div>
+    <div class="bar"><i id="barFill"></i></div>
+  </nav>
+
+  <!-- visor -->
+  <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Detalle de la obra" hidden>
+    <div class="lb-stage"><img id="lbImg" alt=""></div>
+    <aside class="lb-info">
+      <button class="lb-close" id="lbClose" aria-label="Cerrar">Cerrar ✕</button>
+      <p class="lb-series" id="lbSeries"></p>
+      <h2 class="lb-title" id="lbTitle"></h2>
+      <p class="lb-year" id="lbYear"></p>
+      <dl class="lb-dl" id="lbDl"></dl>
+      <p class="lb-note" id="lbNote"></p>
+      <a class="lb-ask" id="lbAsk" href="#/contacto">Consultar esta obra <i aria-hidden="true">→</i></a>
+      <div class="lb-nav">
+        <button id="lbPrev" aria-label="Obra anterior">← Anterior</button>
+        <span id="lbCount"></span>
+        <button id="lbNext" aria-label="Obra siguiente">Siguiente →</button>
+      </div>
+    </aside>
+  </div>
+
+  <noscript><p style="padding:120px 24px;color:#eadfd8">Este portafolio necesita JavaScript para mostrar la galería.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>
