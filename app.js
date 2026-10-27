@@ -1,5 +1,8 @@
 /* Portafolio · Luisa Lozada — dirección 2: taller oscuro */
 const IMG = "assets/img/";
+const WA = "522213260040";
+const waLink = (t) => `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+const enquiry = (it) => `Hola Luisa, me interesa la obra «${it.title}» (${it.series.name}, ${it.series.year}). ¿Me puedes compartir disponibilidad y detalles?`;
 
 const SERIES = [
   {
@@ -174,6 +177,7 @@ function showLB(i) {
   img.src = src(it); img.alt = it.title;
   $("#lbSeries").textContent = s.name;
   $("#lbTitle").textContent = it.title;
+  $("#lbAsk").href = waLink(enquiry(it));
   $("#lbYear").textContent = `${s.year} · ${s.tech}`;
   const rows = [["Medidas", it.dims], ...(it.extra ? [it.extra] : []), ["Técnica", s.tech], ["Producción", s.year]];
   $("#lbDl").innerHTML = rows.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("") +
@@ -197,10 +201,6 @@ $("#chaptersList").addEventListener("click", (e) => { const a = e.target.closest
 $("#lbClose").addEventListener("click", () => closeLB());
 $("#lbPrev").addEventListener("click", () => showLB(curI - 1));
 $("#lbNext").addEventListener("click", () => showLB(curI + 1));
-$("#lbAsk").addEventListener("click", () => {
-  const it = ALL[curI];
-  $("#form").elements.mensaje.value = `Hola Luisa, me interesa la obra «${it.title}» (${it.series.name}, ${it.series.year}). ¿Me puedes compartir disponibilidad y detalles?`;
-});
 
 document.addEventListener("keydown", (e) => {
   if (!lb.hidden) {
@@ -228,8 +228,8 @@ $("#form").addEventListener("submit", (e) => {
   if (!f.checkValidity()) { note.textContent = "Completa los tres campos, por favor."; return; }
   const d = new FormData(f);
   const body = `${d.get("mensaje")}\n\n— ${d.get("nombre")} (${d.get("correo")})`;
-  note.textContent = "Se abrirá tu app de correo para enviar el mensaje.";
-  location.href = `mailto:luisa24lozada@gmail.com?subject=${encodeURIComponent("Contacto desde el portafolio")}&body=${encodeURIComponent(body)}`;
+  note.textContent = "Se abrirá WhatsApp con tu mensaje.";
+  window.open(waLink(body), "_blank", "noopener");
 });
 
 addEventListener("hashchange", () => {

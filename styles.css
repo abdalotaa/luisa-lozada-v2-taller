@@ -208,7 +208,10 @@ body:not([data-page="obras"]) .chapters { opacity: 0; pointer-events: none; }
   .brand img { height: 26px; }
   .nav a { font-size: 9px; letter-spacing: .1em; }
   .nav { gap: 11px; padding-top: 6px; }
-  .top { padding-top: 16px; }
+  .top { padding-top: 16px; gap: 14px; }
+  .brand { flex: 0 1 auto; min-width: 0; }
+  .brand img { max-width: 100%; }
+  .nav { flex: 0 0 auto; }
 
   .track { position: static; height: auto; overflow: visible; }
   .scroller { height: auto !important; }
@@ -232,6 +235,12 @@ body:not([data-page="obras"]) .chapters { opacity: 0; pointer-events: none; }
   .lb-info { padding-top: 14px; border-left: 0; border-top: 1px solid var(--line); }
   .lb-series { margin-top: 10px; }
   .foot { flex-wrap: wrap; justify-content: center; text-align: center; }
+}
+
+@media (max-width: 430px) {
+  .brand img { height: 19px; }
+  .nav { gap: 9px; }
+  .nav a { font-size: 8.5px; letter-spacing: .08em; }
 }
 
 @media (prefers-reduced-motion: reduce) {
